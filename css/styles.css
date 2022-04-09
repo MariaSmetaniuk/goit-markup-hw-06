@@ -618,6 +618,8 @@ img {
   color: var(--secondary-text-mode-dark);
 }
 
+/* Footer social list */
+
 .footer-socials-text {
   font-weight: 700;
   font-size: 14px;
@@ -640,6 +642,91 @@ img {
 .socials-link:focus {
   fill: var(--icon-white);
   background-color: var(--accent-color);
+}
+
+/* Footer form */
+
+.footer-form-wrapper {
+  margin-left: 93px;
+  margin-top: 12px;
+}
+.footer-form-text {
+  display: block;
+  margin-bottom: 20px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  
+  color: var(--primary-text-mode-dark);
+}
+.footer-form {
+  display: flex;
+}
+.footer-input {
+  width: 358px;
+  height: 50px;
+  padding-left: 16px;
+
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+
+  color: var(--primary-text-mode-dark);
+  background-color: inherit;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+.footer-input:placeholder-shown {
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  
+  color: rgba(255, 255, 255, 0.6);
+}
+.footer-input:focus {
+  border-color: var(--accent-color);
+}
+
+.footer-form-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 50px;
+  padding: 0;
+  margin-left: 12px;
+
+  background-color: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+
+  transition: background-color var(--anim-duration-timing-function), box-shadow var(--anim-duration-timing-function);
+}
+
+.footer-form-btn:hover,
+.footer-form-btn:focus {
+  background-color: var(--accent-color-hover);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+.footer-btn-text {
+  margin-right: 10px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  
+  color: var(--primary-text-mode-dark);
+}
+.footer-btm-icon {
+  display: block;
+  width: 24px;
+  height: 24px;
+  background-image: url(../images/icons-svg/icon-send.svg);
 }
 
 /* Modal window */
@@ -813,6 +900,8 @@ img {
   color: var(--secondary-text-mode-light);
 }
 .modal-agree {
+  -webkit-appearance: none;
+  -moz-appearance: none;
   appearance: none;
 }
 .agree-icon {
@@ -853,6 +942,7 @@ img {
 
   transition: background-color var(--anim-duration-timing-function), box-shadow var(--anim-duration-timing-function);
 }
+
 .modal-form-btn:hover,
 .modal-form-btn:focus {
   background-color: var(--accent-color-hover);
