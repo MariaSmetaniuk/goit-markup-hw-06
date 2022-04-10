@@ -799,6 +799,8 @@ img {
     height: 18px;
 
     fill: var(--logo-dark-text);
+
+    transition: fill var(--anim-duration-timing-function);
 }
 .modal-title {
   margin-bottom: 12px;
