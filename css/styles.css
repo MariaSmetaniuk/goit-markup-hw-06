@@ -834,6 +834,7 @@ img {
 }
 .modal-input-wrapper {
   position: relative;
+  display: block;
 }
 .modal-input {
   width: 100%;
